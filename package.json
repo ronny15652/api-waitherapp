@@ -1,0 +1,40 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx tsc",
+    "dev": "nodemon src/index.ts",
+    "start": "node dist"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/multer": "^1.4.7",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "eslint": "^8.27.0",
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.7.2",
+    "multer": "^1.4.5-lts.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronny15652/api.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/ronny15652/api/issues"
+  },
+  "homepage": "https://github.com/ronny15652/api#readme",
+  "description": ""
+}
