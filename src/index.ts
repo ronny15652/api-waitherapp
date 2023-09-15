@@ -3,14 +3,24 @@ import http from 'node:http';
 import express from 'express';
 import mongoose from 'mongoose';
 import { Server } from 'socket.io';
+import dotenv from 'dotenv';
 
 import { router } from './router';
+
+dotenv.config();
+
+const databaseUrl = process.env.DATABASE_URL;
 
 const app = express();
 const server = http.createServer(app);
 export const io = new Server(server);
 
-mongoose.connect('mongodb://localhost:27017/')
+if (!databaseUrl) {
+  console.error('A variável de ambiente DATABASE_URL não está definida.');
+  process.exit(1); // Encerra o aplicativo com erro
+}
+
+mongoose.connect(databaseUrl)
   .then(() => {
     const port = 3001;
 

@@ -1,2 +1,74 @@
-node_modules
-dist
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Output of the 'npm pack' command
+*.tgz
+
+# TypeScript
+*.tsbuildinfo
+
+# Visual Studio Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# .env files (contém variáveis de ambiente com informações confidenciais)
+.env
+
+# Arquivos de log
+*.log
+
+# Dependências específicas do sistema (exemplo: yarn-error.log)
+/yarn-error.log
+
+# Pastas de compilação
+/dist/
+/out/
+/build/
+
+# Dependências geradas dinamicamente
+/.pnp.cjs
+
+# Gravações automáticas de IDEs
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw??
+*.user
+*.suo
+*.bak
+*~.n~
+
+# Dependências do sistema
+.pnp.js
+
+# Dependências NPM (instaladas localmente)
+# Use apenas se você estiver com versionamento de código
+# e deseja excluir os módulos baixados.
+# /node_modules/
+
+# Dependências Yarn (instaladas localmente)
+# Use apenas se você estiver com versionamento de código
+# e deseja excluir os módulos baixados.
+# /yarn.lock
+
+# Dependências Pnpm (instaladas localmente)
+# Use apenas se você estiver com versionamento de código
+# e deseja excluir os módulos baixados.
+# /pnpm-lock.yaml
+# /node_modules/
+# /lock.yaml
+
+# Dependências Composer (PHP)
+# Use apenas se você estiver com versionamento de código
+# e deseja excluir os módulos baixados.
+# /vendor/
