@@ -27,11 +27,6 @@ const upload = multer({
     }),
 });
 
-router.get('/', () => {
-  const menssagem = 'Hello Word';
-  return menssagem;
-});
-
 // list categories
 router.get('/categories', listCategories);
 // creat category
