@@ -29,6 +29,7 @@ Thumbs.db
 
 # Pastas de compilação
 /dist/
+dist/
 /out/
 /build/
 
