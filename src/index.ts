@@ -1,4 +1,4 @@
-import path from 'node:path';
+import path from 'path';
 import http from 'node:http';
 import express from 'express';
 import mongoose from 'mongoose';
